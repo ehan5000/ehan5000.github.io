@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 5 - AI Pathfinding Framework</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>AI Pathfinding Framework</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Spring 2024</h2>
+            <div class="image-container">
+                <img src="ship.png" alt="Project 5 Image" class="project-image-large">
+            </div>
+            <p class="project-text">This AI Pathfinding Framework was developed using C++ and OpenGL. The project extends a maze creation and path planning demo by incorporating additional functionalities and enhancing the path planning algorithm to use the A* algorithm and the dijkstra's algorithm.</p>
+            
+            <div class="video-container">
+                <video width="600" controls>
+                    <source src="path.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p class="project-text">Key features of the project include:</p>
+            <ul class="project-text">
+                <li>Added a mobile sprite representing a character controlled by the mouse, with the character moving smoothly along the planned path.</li>
+                <li>Implemented visual indicators for nodes visited during path planning to display the search area.</li>
+                <li>Extended Dijkstra's algorithm to A* by adding an estimate of the remaining distance, using Manhattan distance multiplied by the lowest edge weight.</li>
+                <li>Modified the maze generation algorithm to use a random selection from a vector instead of a stack, affecting the maze structure.</li>
+            </ul>
+            <p class="project-text">Thorough documentation and comments were provided within the code. The project demonstrates advanced pathfinding techniques using both Dijkstra's and A* algorithms.</p>
+
+            <p class="project-text">Please note that this project was developed for a school project. It is not intended for release and will not be released.</p>
+
+        </section>
+    </main>
+</body>
+</html>
