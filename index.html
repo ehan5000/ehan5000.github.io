@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ehan's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+  (function() {
+    emailjs.init("XB1P-mBSfcBXYd6jN"); 
+  })();
+</script>
+</head>
+<body>
+    
+    <header class="header">
+        <a href="#home" class="logo">Ehan <span>Hassan</span></a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#experience">Experience</a>
+              <a href="#projects">Projects</a>
+            <a href="#hackathons">Hackathons</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+<section class="home" id="home">
+    <div class="home-content">
+        <h1>Hi, I'm <span>Ehan</span> Hassan</h1>
+         <h3 class="text-animation">I'm a <span></span></h3>
+        <p>
+      I'm a 4th-year Bachelor of Computer Science (Honours) student at Carleton University, currently in the Cybersecurity Stream. I enjoy building full stack apps, tackling real-world problems through hackathons and hands-on projects involving AI, networking, and secure software design.
+    </p>
+
+<div class="social-icons">
+  <a href="https://www.linkedin.com/in/ehanhassan/" title="LinkedIn" target="_blank">
+    <i class='bx bxl-linkedin'></i>
+  </a>
+  <a href="https://github.com/ehan5000" title="GitHub" target="_blank">
+    <i class='bx bxl-github'></i>
+  </a>
+  <a href="mailto:ehan20204@gmail.com" title="Gmail">
+    <i class='bx bxl-gmail'></i>
+  </a>
+  <a href="https://www.youtube.com/playlist?list=PLvdXzauLd-DMbiDzWb6BJeThDt-bf5kNq" title="YouTube Project Demos" target="_blank">
+    <i class='bx bxl-youtube'></i>
+  </a>
+</div>
+
+
+<div class="btn-group">
+  <a href="EhanHassan_Resume.pdf" class="btn" download>Download Resume</a>
+  <a href="#contact" class="btn">Contact Me</a>
+</div>
+
+
+  </div>
+
+  <div class="home-img">
+  <img src="Pictures/ee.jpg" alt="Ehan Hassan profile picture">
+</div>
+</section>
+
+<section class="experience" id="experience">
+  <h2 class="heading">Experience</h2>
+
+  <div class="timeline-items">
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2025</div>
+      <div class="timeline-content">
+        <h3>Full Stack Developer Intern - Government of Ontario, Ministry of Finance</h3>
+        <p>Published real public-facing websites and led development of an internal accessibility tool simulating screen reader behavior.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2021-2024</div>
+      <div class="timeline-content">
+        <h3>Game Developer Freelance - Unity</h3>
+        <p>Designed and sold indie games on Itch.io and other platforms, earning over $8K through gameplay design and community support.</p>
+      </div>
+    </div>
+
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2020-2022</div>
+      <div class="timeline-content">
+        <h3>Stem Tutor (Contract) - SPDA Education</h3>
+        <p>Tutored k-8 students in computer science and math, simplifying complex topics and boosting student confidence and performance.</p>
+      </div>
+    </div>
+
+
+
+
+  </div>
+</section>
+
+
+
+<section class="projects" id="projects">
+  <h2 class="heading">Projects</h2>
+
+  <div class="projects-grid">
+
+<!-- Project Card 1 -->
+<div class="project-card">
+  <img src="Pictures/aid.jpg" alt="AidVault">
+  <h3>AidVault – Secure Aid Distribution API</h3>
+
+<div class="skills-used">
+  <h4 class="skills-title">Skills Used:</h4>
+  <div class="tech-icons">
+    <img src="Pictures/go.png" alt="Go">
+    <img src="Pictures/postgre.png" alt="PostgreSQL">
+    <img src="Pictures/docker.png" alt="Docker">
+    <img src="Pictures/aws.png" alt="AWS S3">
+  </div>
+</div>
+
+
+
+  <p>RESTful API built with Go, PostgreSQL, Docker, and AWS S3 to manage aid requests and verified deliveries. Designed for transparency and fraud prevention in humanitarian aid.</p>
+  <div class="btn-group">
+    <a href="project1.html" class="btn">Project Details</a>
+    <a href="https://github.com/ehan5000/AidVault" class="btn" target="_blank">View on GitHub</a>
+  </div>
+</div>
+
+
+    <!-- Project Card 2 -->
+    <div class="project-card">
+      <img src="Pictures/locutus.jpg" alt="LocutusAI">
+      <h3>LocutusAI - AI Speech and Presentation Coach</h3>
+
+        <div class="skills-used">
+    <h4 class="skills-title">Skills Used:</h4>
+    <div class="tech-icons">
+      <img src="Pictures/js.png" alt="Node.js">
+      <img src="Pictures/express.png" alt="Express.js">
+      <img src="Pictures/deepgram.png" alt="Deepgram API">
+      <img src="Pictures/javascript.png" alt="JavaScript">
+    </div>
+  </div>
+
+      <p>An AI-powered tool that analyzes speech to give feedback on filler words, tone, stuttering, and pauses. Built using Node.js, Express.js, and Deepgram API.</p>
+      <div class="btn-group">
+        <a href="project2.html" class="btn">Project Details</a>
+        <a href="https://github.com/ehan5000/locutusAI" target="_blank" class="btn">GitHub</a>
+      </div>
+    </div>
+
+
+   
+<!-- Project Card 3 -->
+<div class="project-card">
+  <img src="Pictures/Tandem.jpg" alt="Tandem t:slim Insulin Pump Simulator">
+  <h3>Tandem t:slim Insulin Pump Simulator</h3>
+
+  
+  <div class="skills-used">
+    <h4 class="skills-title">Skills Used:</h4>
+    <div class="tech-icons">
+      <img src="Pictures/cpp.png" alt="C++">
+      <img src="Pictures/qt.png" alt="Qt">
+      <img src="Pictures/linux.png" alt="Linux">
+      <img src="Pictures/git.png" alt="Git">
+    </div>
+  </div>
+
+  <p>Qt-based simulation of the t:slim X2 insulin pump with Control-IQ logic, CGM data simulation, insulin delivery tracking, and alert systems. Built in C++ with a focus on safety-critical healthcare UI/UX.</p>
+  <div class="btn-group">
+    <a href="project3.html" class="btn">Project Details</a>
+    <a href="https://github.com/ehan5000/Tandem-t-slim-Insulin-Pump-Simulator" class="btn" target="_blank">View on GitHub</a>
+  </div>
+</div>
+
+
+    <!-- Project Card 4 -->
+    <div class="project-card">
+      <img src="Pictures/ship.png" alt="AI Pathfinding">
+      <h3>AI Pathfinding Framework</h3>
+
+      
+  <div class="skills-used">
+    <h4 class="skills-title">Skills Used:</h4>
+    <div class="tech-icons">
+      <img src="Pictures/cpp.png" alt="C++">
+      <img src="Pictures/opengl.png" alt="OpenGL">
+      <img src="Pictures/cmake.png" alt="CMake">
+      <img src="Pictures/linux.png" alt="Linux">
+    </div>
+  </div>
+
+      <p>This AI Pathfinding Framework was developed using C++ and OpenGL. The project extends a maze creation and path planning demo by incorporating additional functionalities and enhancing the path planning algorithm to use the A* algorithm and the dijkstra's algorithm.</p>
+      <div class="btn-group">
+        <a href="project4.html" class="btn">Project Details</a>
+        <a href="https://github.com/ehan5000/AI-Pathfinding-Framework" target="_blank" class="btn">GitHub</a>
+      </div>
+    </div>
+
+
+    <!-- Project Card 5 -->
+<div class="project-card">
+  <img src="Pictures/elevator.jpg" alt="Elevator Simulator">
+  <h3>Elevator System Simulator in Qt C++</h3>
+
+  <div class="skills-used">
+    <h4 class="skills-title">Skills Used:</h4>
+    <div class="tech-icons">
+    <img src="Pictures/cpp.png" alt="C++">
+    <img src="Pictures/qt.png" alt="Qt">
+    <img src="Pictures/linux.png" alt="Linux">
+    <img src="Pictures/git.png" alt="Git">
+    </div>
+  </div>
+
+  <p>Qt-based elevator simulator in C++ with configurable floors, passengers, and elevators. Features simulation time, live elevator tracking, safety alarms (fire, overload, power-out, help), GUI design, and custom logic for elevator allocation and state transitions.</p>
+  
+  <div class="btn-group">
+    <a href="project5.html" class="btn">Project Details</a>
+    <a href="https://github.com/ehan5000/C-Qt-Elevator-System-Simulator" target="_blank" class="btn">GitHub</a>
+  </div>
+</div>
+
+ 
+
+      <!-- Project Card 6 -->
+    <div class="project-card">
+      <img src="Pictures/chat.jpg" alt="Chat Server">
+      <h3>Private & Group Messaging Chat Server</h3>
+        <div class="skills-used">
+    <h4 class="skills-title">Skills Used:</h4>
+    <div class="tech-icons">
+      <img src="Pictures/javascript.png" alt="JavaScript">
+      <img src="Pictures/js.png" alt="Node.js">
+      <img src="Pictures/socketio.png" alt="Socket.IO">
+      <img src="Pictures/sqlite.png" alt="SQLite">
+    </div>
+  </div>
+
+      <p>Real-time chat server with private/group messaging using Node.js and Socket.IO. Includes alerts, validation, and custom styling per user/message.</p>
+      <div class="btn-group">
+        <a href="project6.html" class="btn">Project Details</a>
+        <a href="https://github.com/ehan5000/Private-Group-Messaging-Chat-Server" target="_blank" class="btn">GitHub</a>
+      </div>
+    </div>
+
+       <!-- Project Card 7 -->
+    <div class="project-card">
+      <img src="Pictures/itunes.png" alt="Playlist App">
+      <h3>Spotify/iTunes Inspired Playlist App</h3>
+
+        <div class="skills-used">
+    <h4 class="skills-title">Skills Used:</h4>
+    <div class="tech-icons">
+      <img src="Pictures/javascript.png" alt="JavaScript">
+      <img src="Pictures/js.png" alt="Node.js">
+      <img src="Pictures/sqlite.png" alt="SQLite">
+      <img src="Pictures/express.png" alt="Express.js">
+    </div>
+  </div>
+
+      <p>JavaScript/Node.js-based app that allows users to create playlists, add and remove songs, and search for songs. It features a smart search function that suggests the best matches even when songs are misspelled. The app uses a unique login system and saves playlists for each account using SqLite.</p>
+      <div class="btn-group">
+        <a href="project7.html" class="btn">Project Details</a>
+        <a href="https://github.com/ehan5000/Spotify-iTunes-Inspired-Playlist-App" target="_blank" class="btn">GitHub</a>
+      </div>
+    </div>
+
+
+    <!-- Project Card 8 -->
+    <div class="project-card">
+      <img src="Pictures/ce2.png" alt="KuriusHacks Game">
+      <h3>KuriusHacks Christmas Hackathon</h3>
+        <div class="skills-used">
+    <h4 class="skills-title">Skills Used:</h4>
+    <div class="tech-icons">
+      <img src="Pictures/gml.png" alt="GML">
+      <img src="Pictures/javascript.png" alt="JavaScript">
+      <img src="Pictures/cee.png" alt="C">
+      <img src="Pictures/git.png" alt="Git">
+    </div>
+  </div>
+
+      <p>1st Place Winner: Holiday-themed platformer game based on the song “12 Days of Christmas” built with GML, JavaScript, and C. Features themed maze generation levels and smart AI enemies.</p>
+      <div class="btn-group">
+        <a href="project8.html" class="btn">Project Details</a>
+        <a href="https://github.com/ehan5000/12-Days-of-Christmas" target="_blank" class="btn">GitHub</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+ <section id="hackathons" class="hackathon">
+  <h2 class="heading">Hackathons</h2>
+  <div class="projects-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; justify-items: center;">
+    
+    <div class="hackathon-card">
+      <img src="Pictures/hackthehill.png" alt="Hack The Hill Logo">
+      <h3>Hack The Hill</h3>
+      <p><strong>Sept 27 2024 - Sept 29 2024</strong><br>
+        Our team developed <strong>LocutusAI</strong>, an AI-driven presentation practice tool that analyzes speech patterns to provide personalized feedback for enhancing public speaking skills. We excelled in team collaboration and communication throughout the development process. 
+        <a href="https://github.com/ehan5000/locutusAI" target="_blank"><strong>View on GitHub</strong></a>.
+      </p>
+    </div>
+
+    <div class="hackathon-card">
+      <img src="Pictures/tunnel.png" alt="Hack The Tunnels Logo">
+      <h3>Hack The Tunnels</h3>
+      <p><strong>Sept 29 2023 – Sept 30 2023</strong><br>
+        Built a web application using <strong>React, HTML, CSS, and JavaScript</strong>, focusing on frontend development. Teamwork and collaboration were integral to our success in this hackathon. 
+        <a href="https://github.com/Hack-The-Tunnels-8/hack-the-tunnels-team-charlie" target="_blank"><strong>View on GitHub</strong></a>.
+      </p>
+    </div>
+
+    <div class="hackathon-card">
+      <img src="Pictures/npss.png" alt="North Park Hackathon Logo">
+      <h3>North Park Hackathon</h3>
+      <p><strong>Jan 5 2022 – Jan 7 2022</strong><br>
+        Created a small text-based game using <strong>C</strong>, demonstrating programming fundamentals and problem-solving skills. The project aimed to strengthen skills in basic data structures and algorithm implementation.
+      </p>
+    </div>
+
+    <div class="hackathon-card">
+      <img src="Pictures/kurius.png" alt="Kurius Hackathon Logo">
+      <h3>KuriusHacks: Christmas Edition</h3>
+      <p><strong>Dec 26 2021 - Dec 30 2021</strong><br>
+        <strong>Winner:</strong> 1st Place for Community Choice and 2nd Place for Jury Winner. Developed a holiday-themed game inspired by "12 Days of Christmas" featuring festive levels and holiday-themed enemies. 
+        <a href="https://ehanhassan.itch.io/12daysofchristmas" target="_blank"><strong>Play the Game</strong></a> or 
+        <a href="https://github.com/ehan5000/12-Days-of-Christmas" target="_blank"><strong>View on GitHub</strong></a>.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="heading">Contact <span>Me</span></h2>
+
+  <form id="contact-form">
+    <div class="input-group">
+      <div class="input-box">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+      </div>
+      <div class="input-box">
+        <input type="number" name="phone" placeholder="Phone Number">
+        <input type="text" name="subject" placeholder="Subject">
+      </div>
+    </div>
+
+    <div class="input-group-2">
+      <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+      <input type="submit" value="Send Message" class="btn">
+    </div>
+  </form>
+</section>
+
+
+<footer class="footer">
+  <div class="social">
+<a href="https://www.linkedin.com/in/ehanhassan/" title="LinkedIn" target="_blank">
+    <i class='bx bxl-linkedin'></i>
+  </a>
+  <a href="https://github.com/ehan5000" title="GitHub" target="_blank">
+    <i class='bx bxl-github'></i>
+  </a>
+  <a href="mailto:ehan20204@gmail.com" title="Gmail">
+    <i class='bx bxl-gmail'></i>
+  </a>
+  <a href="https://www.youtube.com/playlist?list=PLvdXzauLd-DMbiDzWb6BJeThDt-bf5kNq" title="YouTube Project Demos" target="_blank">
+    <i class='bx bxl-youtube'></i>
+  </a>
+</div>
+
+
+<ul class="list">
+  <li><a href="#home">Home</a></li>
+  <li><a href="#experience">Experience</a></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#hackathons">Hackathons</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+<p class="copyright">
+  © Ehan Hassan | All Rights Reserved
+</p>
+
+</footer>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

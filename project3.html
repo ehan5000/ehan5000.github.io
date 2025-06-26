@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tandem t:slim X2 Insulin Pump Simulator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">Ehan <span>Hassan</span></a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#projects" class="active">Projects</a>
+      <a href="index.html#hackathons">Hackathons</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="project-details" id="project-details">
+    <h2 class="heading">Tandem t:slim X2 Insulin Pump Simulator</h2>
+
+    <div class="project-image-container">
+      <img src="Pictures/tslim2.png" alt="Insulin Pump UI" class="project-image">
+    </div>
+
+    <div class="skills-used">
+      <h4 class="skills-title">Skills Used:</h4>
+      <div class="tech-icons">
+        <img src="Pictures/cpp.png" alt="C++">
+        <img src="Pictures/qt.png" alt="Qt">
+        <img src="Pictures/linux.png" alt="Linux">
+        <img src="Pictures/git.png" alt="Git">
+      </div>
+    </div>
+
+    <p>This simulator replicates the full user experience of the Tandem t:slim X2 insulin pump using C++ and the Qt framework. Designed to emulate core insulin delivery workflows, it includes a realistic user interface, data visualization, dynamic insulin profile controls, and Control-IQ automation. The purpose of the simulation is to train users, support safe testing of insulin pump features, and help developers understand how such systems operate without relying on physical medical devices.</p>
+
+    <p>Key functionalities include CRUD management of personal insulin profiles, manual bolus delivery (including quick and extended), real-time graphing of CGM (continuous glucose monitoring) data, and simulation of alerts such as battery low, insulin level low, and blood glucose anomalies. Each simulated action is logged for audit and diagnostic purposes.</p>
+
+    <p>Control-IQ, the automated insulin delivery system, uses live CGM feedback to decide if basal insulin should be paused, resumed, or adjusted. The UI allows users to visualize insulin on board (IOB), insulin fill levels, and battery status. A lock screen, startup sequence, and system error handling are also implemented, mirroring real-world safety operations.</p>
+
+
+    <div class="project-image-container">
+      <img src="Pictures/Tandem.jpg" alt="Insulin Pump Screenshot" class="project-image">
+    </div>
+
+<div class="project-note">
+  <p><em>From design to implementation, the simulation leverages state machines, sequence diagrams, and Qt's signal-slot mechanism to organize event-driven programming. Scenarios are testable with traceability mapped to specific use cases such as bolus override or delivery suspension due to low blood glucose. Events are logged and categorized, making this simulator not only educational but also ideal for usability testing and future AI integrations for predictive dosing.</em></p>
+</div>
+
+<h3>Technologies Used</h3>
+<ul>
+  <li><strong>C++</strong></li>
+  <li><strong>Qt Framework</strong></li>
+  <li><strong>Linux (VM)</strong></li>
+  <li><strong>Git</strong></li>
+  <li><strong>Custom UI Rendering</strong></li>
+</ul>
+
+
+    <a href="https://github.com/ehan5000/Tandem-t-slim-Insulin-Pump-Simulator" target="_blank" class="btn">View on GitHub</a>
+  </section>
+
+  <footer class="footer">
+    <div class="social">
+      <a href="https://www.linkedin.com/in/ehanhassan/" title="LinkedIn" target="_blank">
+        <i class='bx bxl-linkedin'></i>
+      </a>
+      <a href="https://github.com/ehan5000" title="GitHub" target="_blank">
+        <i class='bx bxl-github'></i>
+      </a>
+      <a href="mailto:ehan20204@gmail.com" title="Gmail">
+        <i class='bx bxl-gmail'></i>
+      </a>
+      <a href="https://www.youtube.com/playlist?list=PLvdXzauLd-DMbiDzWb6BJeThDt-bf5kNq" title="YouTube Project Demos" target="_blank">
+        <i class='bx bxl-youtube'></i>
+      </a>
+    </div>
+
+    <ul class="list">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#hackathons">Hackathons</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <p class="copyright">
+      © Ehan Hassan | All Rights Reserved
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

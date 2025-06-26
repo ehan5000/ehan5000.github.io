@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elevator System Simulator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">Ehan <span>Hassan</span></a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#projects" class="active">Projects</a>
+      <a href="index.html#hackathons">Hackathons</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="project-details" id="project-details">
+    <h2 class="heading">Elevator System Simulator</h2>
+
+    <!-- Project Image Top -->
+    <div class="project-image-container">
+      <img src="Pictures/elevatorr.png" alt="Elevator System UI" class="project-image">
+    </div>
+
+    <!-- Skills Used -->
+    <div class="skills-used">
+      <h4 class="skills-title">Skills Used:</h4>
+      <div class="tech-icons">
+        <img src="Pictures/cpp.png" alt="C++">
+        <img src="Pictures/qt.png" alt="Qt">
+        <img src="Pictures/linux.png" alt="Linux">
+        <img src="Pictures/git.png" alt="Git">
+      </div>
+    </div>
+
+    <!-- Project Description -->
+    <p>This Elevator System Simulator was built entirely in C++ using the Qt framework, showcasing a deep understanding of event-driven GUI design and real-world elevator control logic. The system simulates a multi-floor elevator interface with interactive button presses, floor-to-floor travel, direction indicators, and a dynamic state machine handling requests in real-time. The simulator can respond to both external (hall call) and internal (car call) requests while prioritizing direction and optimizing stops, mimicking the logic found in real elevator systems.</p>
+
+    <p>We implemented state diagrams, flowcharts, and UML class designs during the planning phase, ensuring the logic was both efficient and scalable. The UI allows users to request specific floors via buttons, and the elevator provides clear visual feedback through a digital floor display and directional indicators. Users can observe the elevator stopping at intermediate floors, updating its route logic on the fly. The entire system operates smoothly through Qt’s signal-slot mechanism, providing clean separation between business logic and the interface layer.</p>
+
+    <p>In addition to basic simulation, we accounted for key safety scenarios, such as emergency stop buttons and prevention of logic bugs like duplicate call handling or rapid re-entry to the same floor. Thanks to Qt’s timer and signal event system, the elevator animation moves at a realistic pace, giving users a natural interaction experience. The elevator logic is modular, enabling quick future upgrades like adding a second elevator shaft or building-wide logic coordination.</p>
+
+    <!-- Second Image -->
+    <div class="project-image-container">
+      <img src="Pictures/ele.png" alt="Elevator System Simulation Running" class="project-image">
+    </div>
+
+ 
+
+<!-- Technologies Used -->
+<h3>Technologies Used</h3>
+<ul>
+  <li><strong>C++</strong></li>
+  <li><strong>Qt</strong></li>
+  <li><strong>Signal-Slot Architecture</strong></li>
+  <li><strong>Finite State Machines</strong></li>
+  <li><strong>Linux</strong></li>
+</ul>
+<!-- Buttons -->
+<div class="btn-group">
+  <a href="https://www.youtube.com/watch?v=sPUiYgcpTkc&list=PLvdXzauLd-DMbiDzWb6BJeThDt-bf5kNq&index=1&t=959s" class="btn" target="_blank" style="background-color: red;">Watch Demo</a>
+  <a href="https://github.com/ehan5000/C-Qt-Elevator-System-Simulator" class="btn" target="_blank">View on GitHub</a>
+</div>
+
+</section>
+
+   <footer class="footer">
+    <div class="social">
+      <a href="https://www.linkedin.com/in/ehanhassan/" title="LinkedIn" target="_blank">
+        <i class='bx bxl-linkedin'></i>
+      </a>
+      <a href="https://github.com/ehan5000" title="GitHub" target="_blank">
+        <i class='bx bxl-github'></i>
+      </a>
+      <a href="mailto:ehan20204@gmail.com" title="Gmail">
+        <i class='bx bxl-gmail'></i>
+      </a>
+      <a href="https://www.youtube.com/playlist?list=PLvdXzauLd-DMbiDzWb6BJeThDt-bf5kNq" title="YouTube Project Demos" target="_blank">
+        <i class='bx bxl-youtube'></i>
+      </a>
+    </div>
+
+    <ul class="list">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#hackathons">Hackathons</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <p class="copyright">
+      © Ehan Hassan | All Rights Reserved
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

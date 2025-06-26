@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AidVault - Secure Aid Distribution API</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">Ehan <span>Hassan</span></a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#projects" class="active">Projects</a>
+      <a href="index.html#hackathons">Hackathons</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="project-details" id="project-details">
+    <h2 class="heading">AidVault - Secure Aid Distribution API</h2>
+
+    <!-- Project Image -->
+    <div class="project-image-container">
+      <img src="Pictures/aid.jpg" alt="AidVault Project Image" class="project-image">
+    </div>
+
+    <!-- Skills Used -->
+    <div class="skills-used">
+      <h4 class="skills-title">Skills Used:</h4>
+      <div class="tech-icons">
+        <img src="Pictures/go.png" alt="Go">
+        <img src="Pictures/postgre.png" alt="PostgreSQL">
+        <img src="Pictures/docker.png" alt="Docker">
+        <img src="Pictures/aws.png" alt="AWS S3">
+      </div>
+    </div>
+
+    <!-- Project Description -->
+  <p>
+  AidVault is a secure, production-grade RESTful API system purpose-built to modernize and streamline the distribution of humanitarian aid. The project was born out of a need to bring structure, transparency, and accountability to the often chaotic world of aid logistics — especially in crisis zones where paper trails are unreliable and human error can lead to resource mismanagement or fraud. By creating a centralized, digital backend to handle everything from aid requests to delivery confirmations, AidVault makes it easier for non-profit organizations, NGOs, and government bodies to distribute help fairly, safely, and with proof.
+</p>
+
+<p>
+  At its core, AidVault enables two types of users: aid seekers (e.g., field agents, refugees, volunteers) and registered aid organizations (e.g., Red Cross, local NGOs). Users can submit detailed aid requests that include item needs, descriptions, emergency levels, and optionally, file attachments such as ID documents or photos of local damage. These files are securely uploaded to Amazon S3, where they are organized, versioned, and protected from unauthorized access. Aid organizations can then authenticate into the system, view all pending requests, and accept or decline them based on their own vetting process.
+</p>
+
+<p>
+  Once a request is approved, the organization logs the status of the aid delivery (in transit, delivered, failed, etc.) and uploads any proof-of-delivery documentation. This entire lifecycle is auditable via immutable logs stored in PostgreSQL, and each transaction is associated with a unique UUID and timestamp. This means that after an aid campaign, donors or government bodies can request a full report showing where aid was sent, how it was used, and whether it reached its intended recipients — solving a major transparency issue in global relief efforts.
+</p>
+
+<p>
+  AidVault was built using <strong>Go (Golang)</strong> as the primary backend language. Go was selected for its fast compilation, high concurrency support, and suitability for scalable backend systems. Thanks to Go's native goroutines and lightweight HTTP handling, the system can handle multiple concurrent aid requests, uploads, and status checks with minimal resource strain. All services are exposed through versioned, RESTful endpoints and organized by domain — including endpoints for organizations, requests, delivery confirmation, and document verification.
+</p>
+
+<p>
+  PostgreSQL was chosen for its powerful relational modeling and strong ACID compliance, critical in a system where data integrity cannot be compromised. Complex relationships between aid seekers, organizations, and delivery transactions are modeled using foreign key constraints, cascading deletions, and indexed queries. Additionally, full-text search capabilities allow organizations to quickly search for aid requests by region, need type, or keyword, which is especially useful in disaster zones where immediate triage is required.
+</p>
+
+<p>
+  For secure and scalable file handling, AidVault integrates with <strong>AWS S3</strong>, allowing users to upload scanned documents, request forms, and photos directly from the API interface. Each document is associated with a metadata object in the database, including who uploaded it, which aid request it belongs to, and whether it’s been verified. This makes it easier for organizations to validate the authenticity of requests — for example, a refugee center can upload a single family’s food ration request alongside ID documents, and the NGO can review and approve it remotely.
+</p>
+
+<p>
+  Docker is used to containerize the application, allowing AidVault to be easily deployed across cloud infrastructure or on-premise environments. The Docker configuration includes multi-stage builds, separating dependencies and production-ready artifacts. With Docker Compose, the entire system — API, database, file manager, and environment variables — can be spun up in seconds, enabling fast iteration and easy migration to platforms like AWS EC2, GCP, or Azure.
+</p>
+
+<p>
+  Security is a major concern in aid-related systems, and AidVault reflects this through a combination of JWT-based authentication, HTTPS-only endpoint exposure, and role-based access controls (RBAC). Admin users can perform operations like deleting requests or verifying new organization registrations, while regular organization users are limited to submitting or managing requests. All sensitive fields (emails, passwords, tokens) are hashed or encrypted in transit and at rest.
+</p>
+
+<p>
+  Some practical examples of how AidVault can be used include disaster response coordination (e.g., assigning first responders based on incoming request locations), rural community food aid distribution (tracking rice or water aid to remote towns), and refugee center supply management (requesting beds, medicine, or hygiene kits). The system was designed to be modular, so new features like push notifications, analytics dashboards, SMS verification, or mobile app integrations can be layered in as future extensions.
+</p>
+
+<p>
+  Beyond technical implementation, the mission behind AidVault is to ensure that aid systems are not only digitized but also democratized. In many countries, lack of access to tools and accountability leads to inequity in how and where aid is distributed. By open-sourcing the backend and making it easy for governments or NGOs to fork and adapt it, the project contributes to fairer, smarter humanitarian efforts. With a robust architecture, real-world use cases, and clear extensibility paths, AidVault stands as a proof-of-concept for what digital humanitarian infrastructure should look like.
+</p>
+
+<h3>Technologies Used</h3>
+<ul>
+  <li><strong>Go (Golang)</strong></li>
+  <li><strong>PostgreSQL</strong></li>
+  <li><strong>Docker</strong></li>
+  <li><strong>AWS S3</strong></li>
+  <li><strong>RESTful API</strong></li>
+  <li><strong>JWT Authentication</strong></li>
+</ul>
+
+    <a href="https://github.com/ehan5000/AidVault" target="_blank" class="btn">View on GitHub</a>
+  </section>
+
+  <footer class="footer">
+    <div class="social">
+      <a href="https://www.linkedin.com/in/ehanhassan/" title="LinkedIn" target="_blank">
+        <i class='bx bxl-linkedin'></i>
+      </a>
+      <a href="https://github.com/ehan5000" title="GitHub" target="_blank">
+        <i class='bx bxl-github'></i>
+      </a>
+      <a href="mailto:ehan20204@gmail.com" title="Gmail">
+        <i class='bx bxl-gmail'></i>
+      </a>
+      <a href="https://www.youtube.com/playlist?list=PLvdXzauLd-DMbiDzWb6BJeThDt-bf5kNq" title="YouTube Project Demos" target="_blank">
+        <i class='bx bxl-youtube'></i>
+      </a>
+    </div>
+
+    <ul class="list">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#hackathons">Hackathons</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <p class="copyright">
+      © Ehan Hassan | All Rights Reserved
+    </p>
+  </footer>
+
+  <script src="script.js"></script> 
+</body>
+
+</html>

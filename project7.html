@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify/iTunes Inspired Playlist App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">Ehan <span>Hassan</span></a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#projects" class="active">Projects</a>
+      <a href="index.html#hackathons">Hackathons</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="project-details" id="project-details">
+    <h2 class="heading">Spotify/iTunes Inspired Playlist App</h2>
+
+    <!-- Project Image Top -->
+    <div class="project-image-container">
+      <img src="Pictures/playlist.png" alt="Spotify Inspired Playlist App Image" class="project-image">
+    </div>
+
+    <!-- Skills Used -->
+    <div class="skills-used">
+      <h4 class="skills-title">Skills Used:</h4>
+      <div class="tech-icons">
+        <img src="Pictures/javascript.png" alt="JavaScript">
+        <img src="Pictures/js.png" alt="Node.js">
+        <img src="Pictures/sqlite.png" alt="SQLite">
+        <img src="Pictures/express.png" alt="Express.js">
+      </div>
+    </div>
+
+    <!-- Project Description -->
+    <p>The Spotify/iTunes Inspired Playlist App is a full-featured playlist manager that lets users build, manage, and share personalized music collections — combining the power of JavaScript, Node.js, and SQLite. Inspired by platforms like Spotify and iTunes, this application lets users search and store songs from the iTunes API while managing their own saved playlists in a smooth, responsive UI.</p>
+
+    <p>With built-in user authentication and session tracking, each user account can maintain separate playlists and return to them at any time. Songs can be added or removed in real time with immediate feedback, and the system is smart enough to handle misspellings using a fuzzy search feature that boosts search tolerance and user experience.</p>
+
+    <p>The app supports custom playlist creation, deletion, and reordering. A login and registration system allows multiple users to maintain individual accounts with secure password hashing. The interface is styled with CSS and HTML, giving the user an experience similar to mainstream streaming services but without the bulk or overhead.</p>
+
+    <p>Data is stored in a lightweight SQLite database, with separate tables for users and their playlist entries. Backend routes are handled via Express.js, and the project structure is modular for scalability. The app was built with clean code and separation of logic, following RESTful design patterns and security best practices.</p>
+
+    <!-- Second Image -->
+    <div class="project-image-container">
+      <img src="Pictures/itunes.png" alt="Playlist System Screenshot" class="project-image">
+    </div>
+
+    <!-- Technologies Used -->
+    <h3>Technologies Used</h3>
+    <ul>
+      <li><strong>JavaScript</strong></li>
+      <li><strong>Node.js</strong></li>
+      <li><strong>Express.js</strong></li>
+      <li><strong>SQLite</strong></li>
+      <li><strong>iTunes API</strong></li>
+      <li><strong>HTML/CSS</strong></li>
+    </ul>
+
+    <!-- Buttons -->
+    <div class="btn-group">
+      <a href="https://www.youtube.com/watch?v=sRygAAvVAO0&ab_channel=EhanHassan" class="btn" target="_blank" style="background-color: red;">Watch Demo</a>
+      <a href="https://github.com/ehan5000/Spotify-iTunes-Inspired-Playlist-App" class="btn" target="_blank">View on GitHub</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="social">
+      <a href="https://www.linkedin.com/in/ehanhassan/" title="LinkedIn" target="_blank">
+        <i class='bx bxl-linkedin'></i>
+      </a>
+      <a href="https://github.com/ehan5000" title="GitHub" target="_blank">
+        <i class='bx bxl-github'></i>
+      </a>
+      <a href="mailto:ehan20204@gmail.com" title="Gmail">
+        <i class='bx bxl-gmail'></i>
+      </a>
+      <a href="https://www.youtube.com/playlist?list=PLvdXzauLd-DMbiDzWb6BJeThDt-bf5kNq" title="YouTube Project Demos" target="_blank">
+        <i class='bx bxl-youtube'></i>
+      </a>
+    </div>
+
+    <ul class="list">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#hackathons">Hackathons</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <p class="copyright">
+      © Ehan Hassan | All Rights Reserved
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

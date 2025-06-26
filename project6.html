@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Private & Group Messaging Chat Server</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">Ehan <span>Hassan</span></a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#projects" class="active">Projects</a>
+      <a href="index.html#hackathons">Hackathons</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="project-details" id="project-details">
+    <h2 class="heading">Private & Group Messaging Chat Server</h2>
+
+    <!-- Project Image Top -->
+    <div class="project-image-container">
+      <img src="Pictures/chat.png" alt="Chat Server UI" class="project-image">
+    </div>
+
+    <!-- Skills Used -->
+    <div class="skills-used">
+      <h4 class="skills-title">Skills Used:</h4>
+      <div class="tech-icons">
+        <img src="Pictures/javascript.png" alt="JavaScript">
+        <img src="Pictures/js.png" alt="Node.js">
+        <img src="Pictures/socketio.png" alt="Socket.IO">
+        <img src="Pictures/sqlite.png" alt="SQLite">
+      </div>
+    </div>
+
+    <!-- Project Description -->
+    <p>This project is a full-stack real-time chat server built using Node.js and Socket.IO, enabling both private and group communication between users. The system supports live messaging with instant updates, allowing users to join chat rooms, create private groups, and engage in secure one-on-one conversations.</p>
+
+    <p>Every user has a unique name and session, and the system dynamically manages connected clients while handling edge cases like duplicate usernames or sudden disconnections. The backend includes validation for messages, group creation logic, and efficient real-time data broadcasting through WebSocket channels.</p>
+
+    <p>Users can interact in global rooms or initiate private chats, with messages color-coded and styled based on message type and destination. Group chats are customizable and can be created or deleted on demand. Special alerts notify users when someone joins or exits a session, and a built-in chat-clearing feature gives control over personal message history for privacy.</p>
+
+    <p>The project’s infrastructure allows scalability and fast client-server communication using a custom Express-based HTTP API, lightweight database support using SQLite, and Socket.IO’s event-based architecture. The interface was designed to provide real-time feedback, minimal delay, and intuitive UI for maximum usability in small group or classroom-based setups.</p>
+
+    <!-- Second Image -->
+    <div class="project-image-container">
+      <img src="Pictures/chatty.png" alt="Chat Session Interface" class="project-image">
+    </div>
+
+<!-- Technologies Used -->
+<h3>Technologies Used</h3>
+<ul>
+  <li><strong>JavaScript</strong></li>
+  <li><strong>Node.js</strong></li>
+  <li><strong>Socket.IO</strong></li>
+  <li><strong>Express.js</strong></li>
+  <li><strong>SQLite</strong></li>
+</ul>
+
+<!-- Buttons -->
+<div class="btn-group">
+  <a href="https://www.youtube.com/watch?v=8kerPqAcg5s&list=PLvdXzauLd-DMbiDzWb6BJeThDt-bf5kNq&index=2" class="btn" target="_blank" style="background-color: red;">Watch Demo</a>
+  <a href="https://github.com/ehan5000/Private-Group-Messaging-Chat-Server" class="btn" target="_blank">View on GitHub</a>
+</div>
+
+</section>
+  <footer class="footer">
+    <div class="social">
+      <a href="https://www.linkedin.com/in/ehanhassan/" title="LinkedIn" target="_blank">
+        <i class='bx bxl-linkedin'></i>
+      </a>
+      <a href="https://github.com/ehan5000" title="GitHub" target="_blank">
+        <i class='bx bxl-github'></i>
+      </a>
+      <a href="mailto:ehan20204@gmail.com" title="Gmail">
+        <i class='bx bxl-gmail'></i>
+      </a>
+      <a href="https://www.youtube.com/playlist?list=PLvdXzauLd-DMbiDzWb6BJeThDt-bf5kNq" title="YouTube Project Demos" target="_blank">
+        <i class='bx bxl-youtube'></i>
+      </a>
+    </div>
+
+    <ul class="list">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#hackathons">Hackathons</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <p class="copyright">
+      © Ehan Hassan | All Rights Reserved
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
